@@ -1,0 +1,122 @@
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 80vh;
+    padding: 8rem 2rem 4rem;
+    background: var(--gradient-purple);
+    border-radius: 0 0 2rem 2rem;
+    color: var(--white);
+    gap: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 2;
+    padding-left: 2rem;
+}
+
+.title {
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    background: linear-gradient(to bottom, #dff9fb 0%, #ffffff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+}
+
+.tagline {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+    opacity: 0.9;
+}
+
+.buttons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.btnPrimary {
+    padding: 1rem 2.5rem;
+    background: var(--accent-orange);
+    color: var(--white);
+    border-radius: 3rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    box-shadow: 0 10px 20px rgba(242, 153, 74, 0.4);
+    transition: transform 0.2s;
+}
+
+.btnSecondary {
+    padding: 1rem 2.5rem;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    color: var(--white);
+    border-radius: 3rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.btnPrimary:hover,
+.btnSecondary:hover {
+    transform: translateY(-2px);
+}
+
+.visual {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagePlaceholder {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    object-fit: contain;
+    /* Simple float animation */
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+        border-radius: 0 0 1rem 1rem;
+        padding-top: 6rem;
+    }
+
+    .content {
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+}

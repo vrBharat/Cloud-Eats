@@ -1,0 +1,44 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1.5rem;
+    margin-top: 4rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    max-width: 1200px;
+    width: 100%;
+    margin: 4rem auto 0;
+}
+
+.socials {
+    display: flex;
+    gap: 1rem;
+}
+
+.links {
+    display: flex;
+    gap: 2rem;
+}
+
+.downloadBtn {
+    background: var(--text-dark);
+    color: var(--white);
+    padding: 0.8rem 1.5rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    transition: opacity 0.2s;
+}
+
+.downloadBtn:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+}
