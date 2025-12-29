@@ -1,7 +1,7 @@
 const FoodGallery = () => {
     return (
         <section className="mt-20 sm:mt-32 relative">
-            <h2 className="text-4xl font-extrabold uppercase text-gray-800 mb-12 text-center tracking-wide">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold uppercase text-gray-800 mb-12 text-center tracking-wide break-words">
                 #CloudEats<span className="text-orange-500">Adventures</span>
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 px-4">

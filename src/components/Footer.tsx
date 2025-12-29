@@ -1,4 +1,4 @@
-
+import { Instagram, Twitter, Facebook, Linkedin } from 'lucide-react';
 
 const Footer = () => {
     return (
@@ -11,10 +11,18 @@ const Footer = () => {
                         Redefining food delivery with tech-forward kitchens and sustainable practices.
                     </p>
                     <div className="flex gap-4 mt-2">
-                        {/* Placeholder Social Icons */}
-                        <div className="w-10 h-10 rounded-full bg-white/10 flex justify-center items-center hover:bg-orange-500 transition-colors cursor-pointer text-sm font-bold">IG</div>
-                        <div className="w-10 h-10 rounded-full bg-white/10 flex justify-center items-center hover:bg-blue-500 transition-colors cursor-pointer text-sm font-bold">TW</div>
-                        <div className="w-10 h-10 rounded-full bg-white/10 flex justify-center items-center hover:bg-blue-700 transition-colors cursor-pointer text-sm font-bold">FB</div>
+                        <div className="w-10 h-10 rounded-full bg-white/10 flex justify-center items-center hover:bg-pink-600 transition-colors cursor-pointer text-white">
+                            <Instagram size={20} />
+                        </div>
+                        <div className="w-10 h-10 rounded-full bg-white/10 flex justify-center items-center hover:bg-blue-400 transition-colors cursor-pointer text-white">
+                            <Twitter size={20} />
+                        </div>
+                        <div className="w-10 h-10 rounded-full bg-white/10 flex justify-center items-center hover:bg-blue-600 transition-colors cursor-pointer text-white">
+                            <Facebook size={20} />
+                        </div>
+                        <div className="w-10 h-10 rounded-full bg-white/10 flex justify-center items-center hover:bg-blue-700 transition-colors cursor-pointer text-white">
+                            <Linkedin size={20} />
+                        </div>
                     </div>
                 </div>
 
