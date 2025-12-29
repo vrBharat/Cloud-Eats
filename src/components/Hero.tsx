@@ -31,7 +31,7 @@ const Hero = () => {
            If missing, Next.js might show broken image symbol or alt text. 
        */}
                 <Image
-                    src="/hero-group.png"
+                    src="/hero-group-new.png"
                     alt="Cloud Eats Friends"
                     width={700}
                     height={600}
